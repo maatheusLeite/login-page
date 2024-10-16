@@ -1,8 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-5 justify-content-center align-items-center">
+    <h1 class="fs-3 text-center"> Acesse o sistema para mais informações! </h1>
+
+    <div class="row mt-5">
+        <div class="col-4"></div>
+
+        <div class="col-4">
+            <form class="d-flex flex-column justify-content-around gap-4 mt-5">
+                <div>
+                    <div class="form-group">
+                        <label for="email"> E-mail: </label>
+                        <input 
+                            type="email"
+                            class="form-control mb-3" 
+                            id="email" 
+                            placeholder="Digite seu E-mail"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"> Senha: </label>
+                        <input 
+                            type="password" 
+                            class="form-control mb-3" 
+                            id="password" 
+                            placeholder="Digite sua senha"
+                        >
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-sm btn-dark px-5"> Entrar </button>
+            </form>
+        </div>
+
+        <div class="col-4"></div>
+    </div>
 </div>
